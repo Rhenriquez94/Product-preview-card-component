@@ -24,10 +24,11 @@ body{
 .caja{
     background-color:var(--White);
     border-radius: 5px;
+    width: 500px;
     display: grid;
-    grid-template-columns: repeat(2,265px);
-    grid-template-rows: repeat(1,400px);
- 
+    grid-template-columns: 1fr 1fr;
+
+  
 }
 
 .imagen{
@@ -37,7 +38,6 @@ body{
    border-top-left-radius: 5px;
   
 } 
-
 .texto{
     margin:20px 30px 15px 30px;
 }
@@ -98,33 +98,18 @@ body{
 
 
 
-/*--------------------------------375P------------------*/
-@media screen and (min-width:375px) and (max-width:768px) {
+/*------------------------375P------------------*/
 
+
+@media screen and (min-width:375px) and (max-width:480px) {
+      
     .caja{
-    background-color:var(--White);
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: repeat(1,320px);
-    grid-template-rows: repeat(2,360px);
-    }
-
-    .imagen{
-        background-image: url(images/rsz_2image-product-mobile.jpg);
-        background-repeat: no-repeat;
         border-radius: 5px;
-        margin-top: 130px;
-
-       
-     } 
-     .boton span.carroIcon{
-        background-image: url(images/icon-cart.svg);
-       background-repeat: no-repeat;
-       padding-right: 30px;
+        display: grid;
+        width: 260px;
+        grid-template-columns: repeat(1,260px);
+        grid-template-rows: repeat(1,300px);
+        justify-content: space-around;
+      
     }
-    
-     
-.boton:hover{
-    background-color: hsl(158, 36%, 44%);
-}
 }
